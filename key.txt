@@ -1,0 +1,10 @@
+1ebf6fcea6f9015499e90b2fb28c7932
+
+fetch("https://api.nomics.com/v1/currencies/ticker?key=1ebf6fcea6f9015499e90b2fb28c7932&ids=BTC,ETH,XRP&interval=1d,30d,365d&convert=EUR&per-page=100&page=1")
+  .then(response => response.json())
+  .then(data => console.log(data))
+
+
+  fetch("https://api.nomics.com/v1/currencies?key=1ebf6fcea6f9015499e90b2fb28c7932&ids=BTC,ETH,XRP&attributes=id,name,logo_url,description,reddit_url")
+  .then(response => response.json())
+  .then(data => console.log(data))
