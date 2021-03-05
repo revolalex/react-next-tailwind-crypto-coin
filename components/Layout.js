@@ -47,7 +47,7 @@ export default function Layout({ children, page }) {
                     <li className="text-blue-500"><Link href="https://github.com/revolalex">GitHub</Link></li>
                     <li className="text-blue-500"><Link href="https://revol-cv.netlify.app/">Portofolio</Link></li>
                 </ul>
-                <p>Website made by Alexandre - Techno : react, next , tailwind - Api: https://nomics.com/ </p>
+                <p>Website made by Alexandre - Techno : react, next , tailwind - API: https://nomics.com/ </p>
 
             </footer>
 
