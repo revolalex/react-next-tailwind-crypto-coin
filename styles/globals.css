@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*{
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
 
 html {
   padding: 0;
@@ -12,12 +15,56 @@ html {
   background-position: center;
 }
 .myTitle{
-  text-shadow: 2px 2px 2px rgb(31, 236, 116);
+  text-shadow: 2px 2px 2px rgb(6, 92, 35);
 }
-.generalBack{
-  background-color: rgb(158, 214, 183);
+.myButton{
+  text-shadow: 1px 1px 1px rgb(6, 92, 35);
 }
+.myButton:hover{
+  color: white;
+}
+
+.myAboutText{
+  text-shadow: .5px .5px .5px rgb(100, 100, 100);
+}
+
 .cryptoLi{
   min-width: 320px;
   max-width: 320px;
+}
+
+.myLink{
+  color: #0945ec;
+}
+.myLink:hover{
+  color: white;
+}
+
+.generalBack {
+   background: linear-gradient(62deg, #f4f806, #E73C7E, #23A6D5, #23D5AB);
+     animation: gradient 15s ease infinite; 
+      background-size: 400% 400%;
+  
+}
+@-webkit-keyframes gradient{
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+     background-position: 0% 50%;
+  }
+}
+@keyframes gradient{
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+     background-position: 0% 50%;
+  }
 }
