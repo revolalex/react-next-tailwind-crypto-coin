@@ -9,22 +9,31 @@ export default function Layout({ children, page }) {
             <Head>
                 <title>{page}</title>
                 {/* todo  add SEO*/}
+                <meta
+                    name="description"
+                    content="Check last info about crypto coin. You can check the value of the bitcoin or ethereum and others. check the progression by day, by month or per year"
+                    />
+                    <meta
+                        name="keywords"
+                        content="Bitcoin, crypto, monnaie, crypto monnaie, ethereum, cardano, binance coin, coin, dollar, month, day, year"
+                    />
+                    <meta name="author" content="Alexandre Rodriguez" />
             </Head>
 
             <header className="container-lg headerBg">
-                    <h1 className="text-5xl mb-2 text-blue-700 font-bold myTitle">CRYPTO INFO</h1>
-                    <div className="inline-grid grid-cols-2 gap-x-10 p-4">
-                        <Link href="/">
-                            <button className="bg-green-400 p-3 m-2 rounded-3xl hover:shadow-md border-2 border-blue-500">
-                                Home
+                <h1 className="text-5xl mb-2 text-blue-700 font-bold myTitle">CRYPTO INFO</h1>
+                <div className="inline-grid grid-cols-2 gap-x-10 p-4">
+                    <Link href="/">
+                        <button className="bg-green-400 p-3 m-2 rounded-3xl hover:shadow-md border-2 border-blue-500">
+                            Home
                         </button>
-                        </Link>
-                        <Link href="/about">
-                            <button className="bg-green-400 p-3 m-2 rounded-3xl hover:shadow-md border-2 border-blue-500">
-                                About
+                    </Link>
+                    <Link href="/about">
+                        <button className="bg-green-400 p-3 m-2 rounded-3xl hover:shadow-md border-2 border-blue-500">
+                            About
                         </button>
-                        </Link>
-                    </div>
+                    </Link>
+                </div>
             </header>
             <main className="pt-4 mx-8">
                 {children}
