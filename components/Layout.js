@@ -5,36 +5,32 @@ import Image from 'next/image'
 
 export default function Layout({ children, page }) {
     return (
-        <div className="bg-green-200 pt-5 text-center min-h-screen">
+        <div className="text-center min-h-screen generalBack">
             <Head>
                 <title>{page}</title>
                 {/* todo  add SEO*/}
             </Head>
-            <header className="container-lg">
-                <h1 className="text-5xl mb-2">CRYPTO INFO</h1>
-                <div className="inline-grid grid-cols-2 gap-x-10 p-4">
-                    <Link href="/">
-                        <button className="bg-blue-200 p-3 m-2 rounded-3xl hover:shadow-md border-2 border-blue-300">
-                            Home
-                        </button>
-                    </Link>
-                    <Link href="/about">
-                        <button className="bg-blue-200 p-3 m-2 rounded-3xl hover:shadow-md border-2 border-blue-300">
-                            About
-                        </button>
-                    </Link>
-                </div>
-                <div>
-                    <Image className="rounded-3xl object-cover" src="/crypto.jpg" alt="header pic" width="400" height="40">
 
-                    </Image>
-                </div>
+            <header className="container-lg headerBg">
+                    <h1 className="text-5xl mb-2 text-blue-700 font-bold myTitle">CRYPTO INFO</h1>
+                    <div className="inline-grid grid-cols-2 gap-x-10 p-4">
+                        <Link href="/">
+                            <button className="bg-green-400 p-3 m-2 rounded-3xl hover:shadow-md border-2 border-blue-500">
+                                Home
+                        </button>
+                        </Link>
+                        <Link href="/about">
+                            <button className="bg-green-400 p-3 m-2 rounded-3xl hover:shadow-md border-2 border-blue-500">
+                                About
+                        </button>
+                        </Link>
+                    </div>
             </header>
-            <main className="pt-4 mx-20">
+            <main className="pt-4 mx-8">
                 {children}
             </main>
             <footer className="p-10">
-                <Image className="rounded-3xl object-cover" src="/crypto.jpg" alt="footer pic" width="1200" height="160">
+                <Image className="rounded-3xl object-cover" src="/crypto1.jpg" alt="footer pic" width="1200" height="100">
 
                 </Image>
                 <ul className="pt-10 pb-4 flex justify-around">

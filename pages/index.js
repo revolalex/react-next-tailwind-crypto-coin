@@ -8,7 +8,7 @@ export default function Home({ res }) {
         {res.map((crypto, index) => (
           <li
             key={index}
-            className="hover:shadow-md relative  p-8 border border-blue-300 rounded-3xl bg-blue-100  mx-5 m-4"
+            className="hover:shadow-md relative  p-8 border border-blue-300 rounded-3xl bg-blue-100  mx-5 m-4 cryptoLi"
           >
             <Link href={`/${crypto.id}`}>
               {/* <Link href={`/${crypto.name}?id=${crypto.id}`}> */}

@@ -6,3 +6,18 @@ html {
   padding: 0;
   margin: 0;
 }
+.headerBg{
+  background-image: url('../public/crypto1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.myTitle{
+  text-shadow: 2px 2px 2px rgb(31, 236, 116);
+}
+.generalBack{
+  background-color: rgb(158, 214, 183);
+}
+.cryptoLi{
+  min-width: 320px;
+  max-width: 320px;
+}
